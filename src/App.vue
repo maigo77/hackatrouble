@@ -1,15 +1,31 @@
 <template>
   <div id="app">
-    
+    <transition name="slide" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
+import Inicio from './components/Inicio'
 
 export default {
-  name: 'App',
   components: {
+
+  },
+  data(){
+    return{
+
+    }
+  },
+  components: {
+    Inicio
+  },
+  methods: {
     
+  },
+  computed: {
+
   }
 }
 </script>
